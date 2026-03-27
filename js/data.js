@@ -4,70 +4,77 @@ export const projects = [
     desc: 'Production-grade Data Lakehouse on GCP using a Medallion Architecture with Airflow, BigLake, and SCD Type 2.',
     tags: ['GCP', 'Airflow', 'BigQuery', 'Soda'],
     link: 'https://github.com/pwawiwa/yelp-lakehouse-complete-data-pipeline-with-GCP',
-    cover: 'yelp_lakehouse_cover_webp_1774621606284.png'
+    cover: 'imgs/yelp_lakehouse_cover_webp_1774621606284.png'
   },
   {
     title: 'Airflow on Kubernetes',
     desc: 'Scalable Apache Airflow deployment on Kubernetes using KubernetesExecutor and Helm with Git-Sync.',
     tags: ['Kubernetes', 'Airflow', 'Helm', 'DevOps'],
     link: 'https://github.com/pwawiwa/airflow-k8s-project',
-    cover: 'airflow_k8s_cover_webp_1774621694005.png'
+    cover: 'imgs/airflow_k8s_cover_webp_1774621694005.png'
   },
   {
     title: 'E-commerce Medallion Pipeline',
     desc: 'ELT pipeline orchestrating 100k+ records on GCP with data-aware scheduling and BigQuery push-down.',
     tags: ['GCP', 'Airflow', 'BigQuery', 'SQL'],
     link: 'https://github.com/pwawiwa/ELT-E-commerce-Medallion-Data-Pipeline-with-Airflow',
-    cover: 'ecommerce_medallion_cover_webp_1774621770573.png'
+    cover: 'imgs/ecommerce_medallion_cover_webp_1774621770573.png'
   },
   {
     title: 'Crypto Real-time ETL',
     desc: 'Real-time ETL using Airflow 3 TaskFlow API to stream Coinbase data into S3 and Redshift.',
     tags: ['Airflow 3', 'AWS', 'Redshift', 'Python'],
     link: 'https://github.com/pwawiwa/crypto-etl-airflow-redshift',
-    cover: 'crypto_etl_cover_webp_1774621843850.png'
+    cover: 'imgs/crypto_etl_cover_webp_1774621843850.png'
   },
   {
     title: 'dbt + Airflow Data Engineering',
     desc: 'Production-grade engineering using dbt (Cosmos) and Airflow to orchestrate Snowflake transformations.',
     tags: ['dbt', 'Snowflake', 'Airflow', 'SQL'],
     link: 'https://github.com/pwawiwa/dbt_airflow',
-    cover: 'dbt_airflow_cover_webp_1774622087726.png'
+    cover: 'imgs/dbt_airflow_cover_webp_1774622087726.png'
   },
   {
     title: 'Fintech Medallion Pipeline',
     desc: 'Financial Data Lakehouse on GCP with SCD Type 2 tracking and automated anomaly detection.',
     tags: ['GCP', 'Fintech', 'SCD2', 'BigQuery'],
     link: 'https://github.com/pwawiwa/fintech-medallion-data-pipeline-gcp-airflow',
-    cover: 'fintech_lakehouse_cover_webp_1774622356680.png'
+    cover: 'imgs/fintech_lakehouse_cover_webp_1774622356680.png'
   },
   {
     title: 'FakeStore ETL — Airflow 3.1',
     desc: 'Automated ETL extracting e-commerce data from APIs, processed through Pandas and PostgreSQL.',
     tags: ['Airflow 3.1', 'PostgreSQL', 'Pandas', 'API'],
     link: 'https://github.com/pwawiwa/Airflow',
-    cover: 'fakestore_etl_cover_webp_1774622419478.png'
+    cover: 'imgs/fakestore_etl_cover_webp_1774622419478.png'
+  },
+  {
+    title: 'FakeStore ETL — Airflow 3.1',
+    desc: 'Automated ETL extracting e-commerce data from APIs, processed through Pandas and PostgreSQL.',
+    tags: ['Airflow 3.1', 'PostgreSQL', 'Pandas', 'API'],
+    link: 'https://github.com/pwawiwa/Airflow',
+    cover: 'imgs/fakestore_etl_cover_webp_1774622419478.png'
   },
   {
     title: 'n8n AI Receipt Automation',
     desc: 'Receipt-to-Sheets automation using n8n and AI for automated expense tracking.',
     tags: ['n8n', 'AI', 'Automation', 'No-Code'],
     link: 'https://github.com/pwawiwa/n8n-receipt2sheet',
-    cover: 'n8n_receipt_cover_webp_1774622149408.png'
+    cover: 'imgs/n8n_receipt_cover_webp_1774622149408.png'
   },
   {
     title: 'RAG Medium Vector DB',
     desc: 'RAG implementation for Medium articles using Vector Databases for intelligent knowledge retrieval.',
     tags: ['AI', 'RAG', 'VectorDB', 'Python'],
     link: 'https://github.com/pwawiwa/RAG-of-Medium-Articles-with-Vector-Database-Implementation',
-    cover: 'rag_medium_cover_webp_1774621940821.png'
+    cover: 'imgs/rag_medium_cover_webp_1774621940821.png'
   },
   {
     title: 'ML Deployment with CI/CD',
     desc: 'Machine Learning model deployment pipeline featuring automated CI/CD and monitoring.',
     tags: ['MLOps', 'CI/CD', 'Docker', 'Python'],
     link: 'https://github.com/pwawiwa/ML-Deployment-CI-CD',
-    cover: 'ml_deployment_cover_webp_1774622008349.png'
+    cover: 'imgs/ml_deployment_cover_webp_1774622008349.png'
   }
 ];
 
