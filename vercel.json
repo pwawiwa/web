@@ -1,0 +1,7 @@
+{
+  "name": "wira-portfolio",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

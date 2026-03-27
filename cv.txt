@@ -1,0 +1,212 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+% Pagestyle settings
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable for ATS
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Muhammad Ihsan Prawira Hutomo} \\ \vspace{1pt}
+    \small 
+    \faMapMarker* Pekanbaru, Indonesia $|$ 
+    \faEnvelope\ \href{mailto:wira.hutomo2@gmail.com}{wira.hutomo2@gmail.com} $|$ 
+    \faLinkedin\ \href{https://www.linkedin.com/in/wirahutomo/}{linkedin.com/in/wirahutomo/} $|$
+    \faGithub\ \href{https://github.com/pwawiwa}{github.com/pwawiwa} $|$
+\end{center}
+
+%----------SUMMARY----------
+
+
+\section{Summary}
+\begingroup
+\hyphenpenalty=1000 % Optional: reduces awkward hyphenation
+\justifying
+Efficient. Data Science Fresh Graduate (GPA 3.9/4.0) with a strong focus on Data Engineering. Experienced in building automated, idempotent, and scalable ETL/ELT pipelines using Airflow, PySpark, and Cloud Providers (GCP/AWS). Proficient in implementing Medallion architectures, data quality gates, and CI/CD for data workflows. Certified in AWS Academy Data Engineering and Airflow by Astronomer, dedicated to ensuring data reliability and operational excellence.
+\par
+\endgroup
+
+%----------SKILLS----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Analytics}{: Python (Pandas, PySpark), SQL } \\
+     \textbf{Data Engineering \& Ops}{: Apache Airflow, dbt, Docker, Kubernetes, Terraform, GCP, AWS, Databricks} \\
+     \textbf{Machine Learning}{: TensorFlow, PyTorch, Scikit-learn, BigQuery ML, LLM Automation} \\
+     \textbf{Data Governance \& Quality}{: Soda, Great Expectations, PII Masking, SCD Type 2 Modeling}
+    }}
+ \end{itemize}
+
+%----------WORK & ACADEMIC EXPERIENCE----------
+\section{Work \& Academic Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+      {Business Intelligence Lab $|$ Telkom University}{Sept 2024 -- Jan 2025}
+      {Lab Assistant}{Purwokerto, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Facilitated BI class for students, focusing on dashboarding using \textbf{Power BI} and \textbf{Looker}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Almeera Skincare}{July 2025 -- August 2025}
+      {Tech Intern}{Purwokerto, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Developed AI Chatbots to automate customer interactions, reducing response time for frequent inquiries.}
+        \resumeItem{Managed Meta Ads and marketing analytics, leveraging data to optimize digital campaign ROI.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------DATA ENGINEERING PROJECTS----------
+\section{Data Engineering Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/pwawiwa/yelp-lakehouse-complete-data-pipeline-with-GCP}{GCP Data Lakehouse (Yelp Dataset)}} $|$ \emph{Airflow, BigQuery, GCS, Soda, BQML}}{}
+          \resumeItemListStart
+            \resumeItem{Orchestrated a Medallion ELT pipeline implementing \textbf{SCD Type 2} for historical tracking and \textbf{PII masking} for data privacy.}
+            \resumeItem{Integrated {Soda data quality gates} and data-aware scheduling to ensure high-quality, idempotent data loads.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/pwawiwa/stackexchange-databricks-airflow-kubernetes}{Event-Driven Data Pipeline}} $|$ \emph{Kubernetes, Airflow, Databricks, AWS S3}}{}
+          \resumeItemListStart
+            \resumeItem{Automated cross-platform pipelines using Airflow to trigger Databricks jobs based on S3 event notifications.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\href{https://youtu.be/RUVmN3e2wYM?si=lS-rOTsuIRxNAbx_}{Chicago Taxi Market Analytics}} $|$ \emph{PySpark, GCP Dataproc, BigQuery}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered an ETL pipeline for millions of records, optimizing performance with filter pushdown and partitioning.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%----------LEADERSHIP & ORGANIZATIONAL EXPERIENCE----------
+\section{Leadership \& Organizational Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.youtube.com/@awscloudclubid/videos}{AWS Cloud Club $|$ Telkom University}}{April 2024 -- April 2025}
+      {Curriculum and Development - Data Engineering}{Purwokerto, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Designed and led technical meetups focused on Data Engineering in AWS for 200+ university and high school students.}
+
+      \resumeItemListEnd
+
+\resumeSubheading
+      {\href{https://www.instagram.com/sircle.telupurwokerto/}{Sircle Research \& Development $|$ Telkom University}}{August 2023 -- December 2024}
+      {General Secretary / Co-leader}{Purwokerto, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Led strategic decision-making and cross-division project execution for research and competition initiatives.}
+        \resumeItem{Optimized administrative workflows and meeting coordination to enhance organizational efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.instagram.com/hmsd.telkompurwokerto/}
+      {Data Science Student Association $|$ Telkom University}}{July 2023 -- July 2024}
+      {Staff of Talent \& Research}{Purwokerto, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Organized national-level Machine Learning competitions and conducted talent scouting for student representatives.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {\href{https://www.instagram.com/dice.telkompwt/}
+    {Data Science Explorer $|$ Telkom University}}{July 2023 -- July 2024}
+      {Data Analytic Core Team}{Purwokerto, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Coordinated weekly bootcamps on Data Science fundamentals and managed internal ML competitions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------EDUCATION & PUBLICATIONS----------
+\section{Education \& Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Telkom University}{September 2022 -- January 2026}
+      {Bachelor of Data Science (GPA: 3.9/4.0) -- Cumlaude}{Purwokerto, Indonesia}
+    \resumeSubheading
+      {Bangkit Academy (Google, Tokopedia, Gojek, Traveloka)}{September 2024 -- January 2025}
+      {Machine Learning Path}{Remote}
+  \resumeSubHeadingListEnd
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=0.15in]
+    \resumeItem{\textbf{Thesis:} \href{https://openlibrary.telkomuniversity.ac.id/home/catalog/id/245201/slug/pemodelan-deep-learning-berbasis-gnn-untuk-rekognisi-kata-melalui-gerak-bibir-bahasa-indonesia-dalam-bentuk-buku-karya-ilmiah.html}{ Pemodelan Deep Learning Berbasis GNN untuk Rekognisi Kata Melalui Gerak Bibir Bahasa Indonesia.}}
+    \resumeItem{\textbf{Publication:} \href{https://ejournal.uin-suka.ac.id/saintek/JISKA/article/view/4831?articlesBySimilarityPage=14}{Class Weighting Approach for Handling Imbalanced Data on Forest Fire Classification, JISKA.}}
+  \end{itemize}
+
+%----------CERTIFICATIONS----------
+\section{Certifications \& Awards}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Certifications}{: \href{https://www.credly.com/badges/a1f23fd8-8667-4f78-87a4-daef395aab02/public_url}{AWS Academy Graduate DE}, \href{https://www.credly.com/badges/6eebee9b-ae73-4054-9a78-57b345729933/public_url}{AWS AI Practitioner}, \href{https://www.credly.com/badges/d5ac377e-1e70-4909-b19a-ab5e5d4f077c/public_url}{Apache Airflow Fundamentals (Astronomer)}, \href{https://www.coursera.org/account/accomplishments/professional-cert/H2S0MAVR51J9}{Deep Learning TensorFlow Developer}} \\
+     \textbf{Awards}{:\href{https://www.instagram.com/p/DBRHOyXy-qj/}{2nd Place Big Data Competition StatExplore - Image Forest Fire Detection}}
+    }} \\
+    \textbf{English} : English Proficiency Test by Telkom University (EPrT)  (B2 – Level) 
+ \end{itemize}
+
+\end{document}
