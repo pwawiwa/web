@@ -1,0 +1,38 @@
+/* Styles for the ML Deployment page */
+.ml-interface {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ml-interface input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--gray-700);
+    background: var(--gray-800);
+    color: var(--gray-100);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.ml-interface button {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#results {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--gray-800);
+    border-radius: 4px;
+    min-height: 50px;
+}

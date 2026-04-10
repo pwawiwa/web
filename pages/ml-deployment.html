@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>ML Deployment — Wira Hutomo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/pages/ml-deployment.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="../index.html">WH</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#skills">Query Me</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a href="ml-deployment.html">ML Deployment</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    <span>Available for opportunities</span>
+  </div>
+</nav>
+
+<!-- ML DEPLOYMENT SECTION -->
+<section id="ml-deployment">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Image Classification ML API</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="ml-interface">
+    <p>Select an image to classify:</p>
+    <input type="file" id="image-file" accept="image/*">
+    <button id="predict-btn">Predict</button>
+    <div id="results"></div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 Wira Hutomo — pwawiwa.my.id</span>
+  <span>Built on Vercel · Data-driven by nature</span>
+</footer>
+
+<script type="module" src="../js/pages/ml-deployment.js"></script>
+</body>
+</html>
